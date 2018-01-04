@@ -5,10 +5,9 @@ module.exports = {
     user: process.env.DB_USER || 'tabtracker',
     password: process.env.DB_PASS || 'tabtracker',
     options: {
-      dialect: process.env.dialect || 'sqlite',
       host: process.env.HOST || 'localhost',
-      storage: './tabtracker.sqlite',
-      logging: true
+      dialect: process.env.dialect || 'sqlite',
+      storage: './tabtracker.sqlite'
     }
   }
 }
