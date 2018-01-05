@@ -27,17 +27,23 @@ export default {
   data () {
     return {
       email: '',
-      password: ''
+      password: '',
+
     }
   },
   methods: {
     async register () {
-      const response = await AuthenticationService.register({
+      try {
+        const response = await AuthenticationService.register({
         email: this.email,
         password: this.password
       })
       console.log(response.data)
+    } catch (err) {
+      this.error = error.response.data.error
     }
+      }
+      
   }
 }
 </script>
