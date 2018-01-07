@@ -1,5 +1,8 @@
 # Tracker
 A song Tracker web app on Vue and Express
 
-
-*npm install
+## Installing Server
+```
+cd server
+npm install
+```
